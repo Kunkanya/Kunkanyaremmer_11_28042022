@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../util/AboutDropdown.css'
-import {FaAngleUp} from 'react-icons/fa'
+import {FaAngleDown} from 'react-icons/fa'
 
 const AboutDropdown = (props) => {
-    
+const [isShow, setShow] = useState(false)
+
   return (
     <article className='aboutDropdown-container'>
         <div className='aboutDropdown-header'>
             <h3>{props.name} </h3>
-            <FaAngleUp style={{fontSize:24}} />
+            <FaAngleDown 
+              onClick={() =>
+                setShow(!isShow)
+              } 
+              className={isShow? 'animate' : 'notAnimate'}
+              style={{fontSize:24}} />
+            
         </div>
-        <p className='aboutDropdown-text'>{props.text}</p>       
+        {
+          isShow ? <p className='aboutDropdown-text'>{props.text}</p> : null
+        }       
     </article>
   )
 }

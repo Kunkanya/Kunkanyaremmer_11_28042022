@@ -37,7 +37,7 @@ const About = () => {
 
         {aboutArr.map((item) =>{
           return(
-            <AboutDropdown  kex={item.id} name= {item.name} text={item.text}/>
+            <AboutDropdown  key={item.id} name= {item.name} text={item.text}/>
           )
           })
         }

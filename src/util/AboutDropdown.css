@@ -1,6 +1,7 @@
 .aboutDropdown-container{
     background-color: var(--secondary-color);
     width: 80%;
+    height:fit-content;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -20,4 +21,22 @@
 }
 .aboutDropdown-text{
     padding: 1rem;
+}
+
+@keyframes turn{
+    0%{
+        transform: rotate(deg)
+    }
+    100%{
+        transform: rotate(180deg)
+    }
+}
+
+.notAnimate{
+    cursor: pointer;
+}
+
+.animate{
+    cursor: pointer;
+    animation: turn ease-in-out 0.5s 1 forwards;
 }
