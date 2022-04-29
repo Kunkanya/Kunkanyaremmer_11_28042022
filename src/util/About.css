@@ -1,0 +1,11 @@
+.about-wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}

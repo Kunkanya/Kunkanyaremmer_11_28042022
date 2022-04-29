@@ -3,10 +3,15 @@
         flex-direction: row ;
         justify-content: space-between;
         align-items: center;
+        padding: 2rem;
+
 }
 
 .Header-nav-menu{
-    color:red;
+    color: var(--primary-color);
     padding-left: 2rem;
     font-size:24px ;
+}
+.Header-nav-menu:hover{
+    text-decoration: underline var(--primary-color);
 }

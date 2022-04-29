@@ -1,7 +1,6 @@
 :root {
-  --blue: #0065fc;
-  --lightblue: #deebff;
-  --gray: #f2f2f2;
+  --primary-color: #FF6060;
+  --secondary-color: #F6F6F6;
 }
 *, 
 *::before, 

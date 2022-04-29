@@ -1,4 +1,4 @@
 .Home-thumbnail{
-    background-color: red;
+    background-color: var(--primary-color);
     height:100px;
 }
