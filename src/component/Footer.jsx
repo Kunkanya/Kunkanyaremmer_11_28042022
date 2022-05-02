@@ -1,7 +1,10 @@
 import React from 'react'
 import Logo from '../asset/Logo.svg'
 import '../util/Footer.css'
-
+/**
+ * Show Footer
+ * @returns {HTMLElement}
+ */
 const Footer = () => {
   return (
     <div className="Footer-container">

@@ -5,6 +5,10 @@ import Footer from '../component/Footer'
 import AboutDropdown from '../component/AboutDropdown'
 import '../util/About.css'
 
+/**
+ * About page
+ * @returns 
+ */
 const About = () => {
 
   const aboutArr= [{

@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import '../util/AboutDropdown.css'
 import {FaAngleDown} from 'react-icons/fa'
 
+/**
+ * Component dropdown box to show in about page with description for each service{props.name}.
+ * @param {string} props.name 
+ */
 const AboutDropdown = (props) => {
 const [isShow, setShow] = useState(false)
 

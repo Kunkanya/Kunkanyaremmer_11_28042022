@@ -1,7 +1,11 @@
 import React from 'react'
 import "../util/Banner.css"
 import { useState } from "react"
-
+/**
+ * Component to show banner for Home and About.
+ * @param {String} path 
+ * @returns 
+ */
 const Banner = (path) => {
   const [bannerPath, setBannerPath] = useState("/asset/background_image.png")
 

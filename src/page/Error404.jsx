@@ -1,6 +1,10 @@
 import React from 'react'
 import Header from '../component/Header'
 
+/**
+ * Show error page with error 404 in case URL doesn´t exist.
+ * @returns JSX object
+ */
 const Error404 = () => {
     const styleObj = {
         display: 'flex',
