@@ -7,10 +7,10 @@ import '../util/Footer.css'
  */
 const Footer = () => {
   return (
-    <div className="Footer-container">
+    <footer className="Footer-container">
       <img  src={Logo} alt="Logo"></img>
       <p className="Footer-text">© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   )
 }
 

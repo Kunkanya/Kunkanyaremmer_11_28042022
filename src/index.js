@@ -5,7 +5,7 @@ import './index.css';
 import About from './page/About';
 import Home from './page/Home';
 import Error404 from './page/Error404';
-//import Logement from './page/Logement';
+import Apartment from './page/Apartment';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
+        <Route path ="/Apartment/:id" element={<Apartment />}></Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
