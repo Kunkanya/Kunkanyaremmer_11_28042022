@@ -22,7 +22,7 @@ const [isShow, setShow] = useState(false)
             
         </div>
         {
-          isShow ? <p className='aboutDropdown-text'>{props.text}</p> : null
+          isShow ? <div className='aboutDropdown-text'>{props.text}</div> : null
         }       
     </article>
   )

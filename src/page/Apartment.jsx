@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Logements from '../asset/logements.json'
 import { useParams } from 'react-router-dom'
 import Header from '../component/Header'
 import Footer from '../component/Footer'
 import '../util/Apartment.css'
 import Tag from '../component/Tag'
-//import { RiStarFill } from 'react-icons/ri'
 import Star from '../component/Star'
+import AboutDropdown from '../component/AboutDropdown'
 
 const Apartment = (props) => {
   const { id } = useParams()
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <section className="apartment-wrapper">
         {Logements.map((item) => {
@@ -43,17 +43,35 @@ const Apartment = (props) => {
                       <img src={item.host.picture} alt="avatar" />
                     </div>
                   </div>
-                  <div className="star">
-                                 <Star />   
+                  <div className="star-container">
+                      {/**Create rating-star by checking how many red-star and gray-star we need
+                       * then passing props. through the component <Star /> */}
+                      { (item.rating === 5)? <Star  color ="red" n="5"/> : 
+                      <Fragment>
+                                 <Star  color ="red" n={item.rating}/>   
+                                 <Star  color ="#E3E3E3" n={5 - parseInt(item.rating)}/>   
+                      </Fragment>                              }
                   </div>
                 </div>
               </section>
+
+              <article className='article-container'>
+                      <AboutDropdown name="Desctiption" text={item.description} />
+                      <AboutDropdown name="Équipements" text={
+                        item.equipments.map((list, index)=>{
+                          return(
+                              <p key={list}>{list}</p>
+                          )
+                        })
+                        } />
+
+              </article>
             </section>
           )
         })}
       </section>
       <Footer />
-    </div>
+    </Fragment>
   )
 }
 

@@ -1,17 +1,21 @@
 import React from 'react'
 import { RiStarFill } from 'react-icons/ri'
 
-const Star = () => {
-    const rating = 2
-    const grayStar = 5 - rating
+const Star = (props) => {
+  let n = parseInt(props.n)
+  const colorStyle ={    
+    color: props.color ,
+    fontSize : "24px",
+    margin: "5px"
+  }
+
   return (
-    <div>
-        {rating.map(item =>{return( <RiStarFill style={{color:"star-red"}} />)})}
-        {grayStar.map(item => {return( <RiStarFill style={{color:"star-gray"}} />)})}
-
-    </div>
+    [...Array(n).keys()].map((item,index)=>(
+      <RiStarFill key={index} style={colorStyle} />
+    )
+    )
   )
+  
 }
-
 export default Star
 

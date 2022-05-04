@@ -1,6 +1,9 @@
 .apartment-wrapper{
     margin : 2rem;
     margin-top:0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .apartment-gallery{
     height: 410px;
@@ -74,9 +77,6 @@
 
 }
 
-.star-red{
-    color: var(--primary-color)
-}
-.star-gray{
-    color: var(--secondary-color)
+.star-container{
+margin-top: 2rem;
 }
