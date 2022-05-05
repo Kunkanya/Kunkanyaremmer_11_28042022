@@ -1,17 +1,15 @@
 import React from 'react'
 import "../util/Banner.css"
-import { useState } from "react"
 /**
- * Component to show banner for Home and About.
+ * Component to show different banner for Home and About.
  * @param {String} path 
  * @returns 
  */
-const Banner = (path) => {
-  const [bannerPath, setBannerPath] = useState("/asset/background_image.png")
+const Banner = (props) => {
 
 return (
       <div className ="Banner-container">
-            <img className="Banner-img" src={bannerPath} alt="slogan"></img>
+            <img className="Banner-img" src={props.path} alt="Banner"></img>
             <h1 className="Banner-slogan">Chez vous, partout et ailleurs</h1>
     </div>
     )

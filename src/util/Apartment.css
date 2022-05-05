@@ -5,18 +5,7 @@
     flex-direction: column;
     height: 100%;
 }
-.apartment-gallery{
-    height: 410px;
-    width: 100%;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-.apartment-gallery img{
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-}
+
 .apartment-header{
     display: flex;
     flex-direction: row;
@@ -79,4 +68,12 @@
 
 .star-container{
 margin-top: 2rem;
+}
+
+/*Articel section : deacription adn equipment*/
+.article-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 3rem;
 }

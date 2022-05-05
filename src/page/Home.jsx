@@ -10,9 +10,9 @@ import Thumbnail from "../component/Thumbnail.jsx";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className = "Home">
       <Header />
-      <Banner />
+      <Banner path = "/asset/background_image.png" />
       <Thumbnail />
       <Footer />
     </div>

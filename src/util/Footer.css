@@ -9,12 +9,9 @@
     max-height: 100%;
     bottom: 0;
     padding: 1rem;
-    margin-top: 2rem;
 }
 
-.Footer-container img{
-    height: 40px;
-    width: 120px;
-    margin: 1rem;
-    
+.Footer-container svg{
+fill:white;
+margin: 1rem;
 }

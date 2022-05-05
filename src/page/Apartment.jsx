@@ -7,6 +7,7 @@ import '../util/Apartment.css'
 import Tag from '../component/Tag'
 import Star from '../component/Star'
 import AboutDropdown from '../component/AboutDropdown'
+import Carousel from '../component/Carousel'
 
 const Apartment = (props) => {
   const { id } = useParams()
@@ -18,12 +19,7 @@ const Apartment = (props) => {
         {Logements.map((item) => {
           return !(item.id === id) ? null : (
             <section key={item.id} className="apartment-container">
-              <figure className="apartment-gallery">
-                <img
-                  src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
-                  alt="cover"
-                />
-              </figure>
+              <Carousel imageArr = {item.pictures} />
               <section className="apartment-header">
                 <div className="apartment-name_container">
                   <h1>{item.title}</h1>

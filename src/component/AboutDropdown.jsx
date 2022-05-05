@@ -7,7 +7,7 @@ import {FaAngleDown} from 'react-icons/fa'
  * @param {string} props.name 
  */
 const AboutDropdown = (props) => {
-const [isShow, setShow] = useState(false)
+const [isShow, setShow] = useState(true)
 
   return (
     <article className='aboutDropdown-container'>

@@ -8,7 +8,8 @@ const Star = (props) => {
     fontSize : "24px",
     margin: "5px"
   }
-
+  
+  /**run loop n times to crate star in new array */
   return (
     [...Array(n).keys()].map((item,index)=>(
       <RiStarFill key={index} style={colorStyle} />
