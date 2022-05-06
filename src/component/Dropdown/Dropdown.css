@@ -23,11 +23,22 @@
 
 .aboutDropdown-text{
     padding: 1rem;
+    animation: show ease-in-out 3s 1 forwards;
 }
+
+@keyframes show{
+    0%{
+        transform: translateY(50px, 100px)
+    }
+    100%{
+        transform: translateY(50px, 18px)
+    }
+}
+
 
 @keyframes turn{
     0%{
-        transform: rotate(deg)
+        transform: rotate(0deg)
     }
     100%{
         transform: rotate(180deg)

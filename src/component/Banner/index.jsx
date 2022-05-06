@@ -1,5 +1,5 @@
 import React from 'react'
-import "../util/Banner.css"
+import "./Banner.css"
 /**
  * Component to show different banner for Home and About.
  * @param {String} path 

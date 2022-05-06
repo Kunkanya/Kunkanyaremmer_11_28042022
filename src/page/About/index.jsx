@@ -1,9 +1,7 @@
 import React from 'react'
-import Header from '../component/Header'
-import Banner from '../component/Banner'
-import Footer from '../component/Footer'
-import AboutDropdown from '../component/AboutDropdown'
-import '../util/About.css'
+import Banner from '../../component/Banner'
+import AboutDropdown from '../../component/Dropdown'
+import './About.css'
 
 /**
  * About page
@@ -34,8 +32,7 @@ const About = () => {
 ]
 
   return (
-    <div className='about-wrapper' >
-      <Header />
+    <section className='about-wrapper' >
       <Banner path = "/asset/background-about.png" />
       <div className='about-container'>
         {aboutArr.map((item) =>{
@@ -45,8 +42,8 @@ const About = () => {
           })
         }
       </div>
-      <Footer />
-    </div>
+
+    </section>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../util/Footer.css'
+import './Footer.css'
 /**
  * Show Footer
  * @returns {HTMLElement}
