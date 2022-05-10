@@ -1,12 +1,26 @@
 .about-wrapper{
     overflow-x: hidden;
     overflow-y: auto;
+    padding-top: 0;
+    margin-top: 0;
 }
-
+.about-banner{
+    height: 223px;
+}
 .about-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 6rem;
     margin-right: 6rem ;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .about-container{
+        margin: 1rem;
+    }
+    .about-banner{
+        height: 223px;
+    }
 }

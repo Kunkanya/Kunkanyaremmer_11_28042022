@@ -1,9 +1,10 @@
 .Banner-container{
     position : relative;
     text-align: center;
-    height: 223px;
-    margin: 1rem 2rem 2rem 2rem;
+    height: 100%;
     border-radius: 25px;
+    margin : 2rem;
+    margin-top: 0;
     overflow: hidden;
 }
 .Banner-img{
@@ -28,28 +29,27 @@
 
 @media only screen and (max-width: 770px)  {
     .Banner-container{
-        height: 150px;
         border-radius: 10px;
         margin:2rem;
     }
 
     .Banner-slogan{
-        font-size: 32px;
+        font-size: 28px;
         text-align: left;
         font-weight: 400;
     }
 }
 
-@media only screen and (max-width: 430px)  {
+
+
+  @media only screen and (max-width: 500px)  {
     .Banner-container{
-        height: 110px;
         border-radius: 10px;
         margin:1rem;
-
+        margin-top:0;
     }
-    .Banner-slogan{
-        width: 100%;
-        font-size: 24px;
+    .Banner-slogan {
+        font-size: 18px;
     }
 
 }

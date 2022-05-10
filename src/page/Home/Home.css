@@ -1,0 +1,12 @@
+.home-banner{
+    height: 223px;
+}
+@media only screen and (max-width: 500px) {
+    .about-container{
+        margin: 1rem;
+    }
+    .home-banner{
+        width: auto;
+        height:111px;
+    }
+}

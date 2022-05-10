@@ -77,3 +77,21 @@ margin-top: 2rem;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 3rem;
 }
+
+@media only screen and (max-width: 500px)  {
+    .apartment-wrapper{
+        margin:1rem;
+    }
+    .apartment-container h1{
+        font-size: 18px;
+        color : var(--primary-color);
+        font-weight: 500;
+    }
+    .apartment-container h4{
+        margin:0.5rem;
+        margin-left:0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+}

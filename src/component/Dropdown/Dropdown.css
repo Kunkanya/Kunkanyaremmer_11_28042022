@@ -24,8 +24,11 @@
 .aboutDropdown-text{
     padding: 1rem;
     animation: show ease-in-out 3s 1 forwards;
+    color:var(--primary-color);
 }
-
+.arrowdown-icon{
+    font-size: 24px;
+}
 @keyframes show{
     0%{
         transform: translateY(50px, 100px)
@@ -52,4 +55,23 @@
 .animate{
     cursor: pointer;
     animation: turn ease-in-out 0.5s 1 forwards;
+}
+
+@media only screen and (max-width: 430px)  {
+    .aboutDropdown-container{
+        margin-bottom: 20px;
+    }
+    .aboutDropdown-header{
+        height: 30px;
+    }
+    .aboutDropdown-header h3{
+        font-size : 13px;
+        font-weight: 500;
+    }
+    
+    .aboutDropdown-text{
+        font-size : 12px;
+        font-weight: 400;
+    }
+
 }

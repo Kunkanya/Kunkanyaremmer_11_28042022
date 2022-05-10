@@ -6,11 +6,34 @@
     margin-bottom: 2rem;
 }
 
+.error-container h1{
+    font-size: 244px;
+    color: var(--primary-color);
+}
 .error-container h2{
+    font-size: 36px;
+    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
 .back-home{
     color: red;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+.error-container{
+    height: 63vh;
+    margin: 1rem;
+}
+    .error-container h1{
+        font-size: 96px;
+        margin:2rem;
+        margin-top:0;
+    }
+    .error-container h2{
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
 }

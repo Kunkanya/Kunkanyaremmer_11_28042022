@@ -10,8 +10,8 @@ const Error404 = () => {
    
     return (
         <div  className='error-container'>
-            <h1 style={{fontSize : 244 , color : 'red' }}>404</h1>
-            <h2 style ={{fontSize : 36, color: 'red'}}>
+            <h1 >404</h1>
+            <h2 >
                 Oups! La page que vous demandez n'existe pas.
             </h2>
             <Link to ="/" className='back-home' >Retourner sur la page d’accueil</Link>

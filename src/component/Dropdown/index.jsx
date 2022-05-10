@@ -18,8 +18,8 @@ const [isShow, setShow] = useState(false)
               onClick={() =>
                 setShow(!isShow)
               } 
-              className={isShow? 'animate' : 'notAnimate'}
-              style={{fontSize:24}} />
+              className={isShow? 'animate ' : 'notAnimate'}
+              />
             
         </div>
         {

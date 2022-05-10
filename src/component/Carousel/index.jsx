@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Carousel.css'
-import { MdArrowForwardIos } from 'react-icons/md'
-import { MdArrowBackIosNew } from 'react-icons/md'
+import { FaChevronRight } from 'react-icons/fa'
+import { FaChevronLeft } from 'react-icons/fa'
 
 const Carousel = ({ imageArr }) => {
   const [current, setCurrent] = useState(0)
@@ -19,10 +19,10 @@ const Carousel = ({ imageArr }) => {
       className="carousel-container"
       style={{ backgroundImage: `url(${imageArr[current]})` }}
     >
-      {/**check if there is only 1 img- we do not show the prev and next buttons */}
-      {length === 1 ? "" :<MdArrowBackIosNew className="btn next" onClick={prevSlide} /> }
+      {/**check if there is only 1 img: if yes, we do not show the prev and next buttons */}
+      {length === 1 ? "" :<FaChevronLeft className="btn next" onClick={prevSlide} /> }
       <h3 className="center"> {current+1}/{length}</h3>
-      {length === 1 ? "": <MdArrowForwardIos className="btn prev" onClick={nextSlide} /> }
+      {length === 1 ? "": <FaChevronRight className="btn prev" onClick={nextSlide} /> }
     </div>
 
   )

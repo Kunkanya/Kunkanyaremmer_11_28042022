@@ -33,7 +33,9 @@ const About = () => {
 
   return (
     <section className='about-wrapper' >
-      <Banner path = "/asset/background-about.png" />
+      <div className="about-banner">
+          <Banner path = "/asset/background-about.png" slogan="" className="about-banner" />
+      </div>
       <div className='about-container'>
         {aboutArr.map((item) =>{
           return(
