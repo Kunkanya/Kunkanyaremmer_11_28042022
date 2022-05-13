@@ -1,16 +1,14 @@
 import React from 'react'
-import logements from '../../asset/logements.json'
+//import logements from '../../asset/logements.json'
 import './Thumbnail.css'
 import { Link } from 'react-router-dom'
 
+const Thumbnail = ({ apartmentsData }) => {
 
-const Thumbnail = () => {
-
-/*fetch JSON data*/ 
   return (
     <section className="thumbnail-wrapper">
       {/*Add image of each appartment in thumnail size : using map mehtod*/}
-      {logements.map((item) => {
+      {apartmentsData.map((item) => {
         return (
           <Link key={item.id} to={`/Apartment/${item.id}`}>
             <figure  className="figure-container">

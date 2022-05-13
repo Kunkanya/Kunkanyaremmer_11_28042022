@@ -27,7 +27,7 @@
     font-weight: bolder;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
     .Header-container{
         margin:1rem;
     }

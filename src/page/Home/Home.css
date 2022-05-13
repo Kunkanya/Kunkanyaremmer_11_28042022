@@ -1,7 +1,7 @@
 .home-banner{
     height: 223px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
     .about-container{
         margin: 1rem;
     }

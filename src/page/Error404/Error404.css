@@ -1,9 +1,11 @@
 .error-container{
+    height: 69vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .error-container h1{
@@ -23,8 +25,8 @@
 
 @media only screen and (max-width: 800px) {
 .error-container{
-    height: 63vh;
     margin: 1rem;
+    height: 73vh;
 }
     .error-container h1{
         font-size: 96px;

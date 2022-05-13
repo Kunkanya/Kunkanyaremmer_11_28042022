@@ -5,9 +5,10 @@ import './index.css';
 import About from './page/About/index';
 import Home from './page/Home/index';
 import Error404 from './page/Error404';
-import Apartment from './page/Apartment';
+import Apartment from './page/Apartment/index';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

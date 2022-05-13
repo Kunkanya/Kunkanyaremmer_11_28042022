@@ -8,9 +8,6 @@ import "./Banner.css"
  */
 const Banner = ({path , slogan}) => {
 
-const mobileStyle={
-      
-}
 return (
       <div className ="Banner-container">
             <img className="Banner-img" src={path} alt="Banner"></img>

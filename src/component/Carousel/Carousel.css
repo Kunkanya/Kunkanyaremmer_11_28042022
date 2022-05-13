@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+.carousel-container svg{
+    padding: 1rem;
+}
+
 .btn{
     flex : 5%;
     display: flex;
@@ -37,19 +41,24 @@
     color: white;
 }
 
-
-@media only screen and (max-width: 500px)  {
-    .carousel-container{
-        height: 255px ;
-        border-radius: 10px !important; 
+@media only screen and (max-width: 1025px)  {
+    .carousel-container svg{
+        padding: 1rem;
     }
-   
     .center {
         flex: 90;
     }
     .btn{
         flex:5;
     }
+
+}
+@media only screen and (max-width: 500px)  {
+    .carousel-container{
+        height: 255px ;
+        border-radius: 10px !important; 
+    }
+   
     .apartment-header{
         flex-direction: column;
     }
@@ -60,6 +69,10 @@
     }
     .avatar-container p{
         font-size:12px ;
+    }
+
+    .center{
+        font-size: 14px;
     }
     .article-container{
         grid-template-columns: repeat(1,1fr);

@@ -44,11 +44,11 @@
 .avatar-container p{
     padding-right:1rem;
     text-align: right;
-    max-width:90px;
+    max-width:120px;
     font-size: 18px;
     word-wrap:break-word;
     color: var(--primary-color);
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 }
 
 .avatar{
@@ -78,12 +78,12 @@ margin-top: 2rem;
     grid-column-gap: 3rem;
 }
 
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 800px)  {
     .apartment-wrapper{
         margin:1rem;
     }
     .apartment-container h1{
-        font-size: 18px;
+        font-size: 24px;
         color : var(--primary-color);
         font-weight: 500;
     }
@@ -92,6 +92,28 @@ margin-top: 2rem;
         margin-left:0;
         font-size: 14px;
         font-weight: 500;
+    }    
+    .star-container svg{
+        height: 16px;
+        width: 16px;
     }
+    .star-container{
+        margin-top: 0.5rem;
+    }
+}
+@media only screen and (max-width: 450px)  {
+    .apartment-container h1{
+        font-size: 18px;
+    }
+    .avatar-container p{
+        max-width: 80px;
+        }
 
+}
+@media only screen and (max-width: 325px)  {
+ 
+    .star-container svg{
+        height: 12px;
+        width: 12px;
+    }
 }
