@@ -94,7 +94,7 @@ const apartmentData = data
             {/** Profil-contents section*/}
             <article className="article-container">
               <AboutDropdown
-                name="Desctiption"
+                name="Description"
                 text={apartmentData.description}
               />
               <AboutDropdown
