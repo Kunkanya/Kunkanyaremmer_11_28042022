@@ -29,7 +29,7 @@ const Apartment = () => {
         /**  check if {id} found in Json data.*/
         const apartmentData = data.find((item) => item.id === checkId)
         /** If yes store data in apartmentData */
-       setData(apartmentData)
+       apartmentData === undefined ? <Error404 /> : setData(apartmentData)
         setIsLoading(false)
       })
       .catch((err) => {
