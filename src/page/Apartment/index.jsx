@@ -29,7 +29,7 @@ const Apartment = () => {
         /**  check if {id} found in Json data.*/
         const apartmentData = data.find((item) => item.id === checkId)
         /** If yes store data in apartmentData */
-        apartmentData === undefined ? <Error404 /> : setData(apartmentData)
+       setData(apartmentData)
         setIsLoading(false)
       })
       .catch((err) => {
@@ -73,12 +73,6 @@ const Apartment = () => {
                   </div>
 
                   {/** Profil-Avatar section*/}
-
-
-
-
-
-
 
                   <div className="avatar-wrapper">
                   <Avatar host={apartmentData.host}  />

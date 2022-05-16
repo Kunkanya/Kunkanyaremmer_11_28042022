@@ -49,8 +49,8 @@ function Home() {
 
   return (
     <>
-      {isLoading && <Loading />}
-      {data && (
+      {isLoading ? <Loading /> :
+      data && (
         <div className="Home">
           <div className="home-banner">
             <Banner
