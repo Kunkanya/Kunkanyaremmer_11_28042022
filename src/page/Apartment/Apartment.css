@@ -36,35 +36,6 @@
     flex-direction: column;
     align-items: flex-end;
 }
-.avatar-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.avatar-container p{
-    padding-right:1rem;
-    text-align: right;
-    max-width:120px;
-    font-size: 18px;
-    word-wrap:break-word;
-    color: var(--primary-color);
-    line-height: 1.5rem;
-}
-
-.avatar{
-    height:64px ;
-    width: 64px;
-    border-radius: 50%;
-    background-color: gray;
-    overflow: hidden;
-}
-
-.avatar img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
 
 .star-container{
 margin-top: 2rem;
@@ -105,15 +76,5 @@ margin-top: 2rem;
     .apartment-container h1{
         font-size: 18px;
     }
-    .avatar-container p{
-        max-width: 80px;
-        }
 
-}
-@media only screen and (max-width: 325px)  {
- 
-    .star-container svg{
-        height: 12px;
-        width: 12px;
-    }
 }

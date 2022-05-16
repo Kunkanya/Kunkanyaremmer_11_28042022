@@ -20,11 +20,15 @@
     align-items: center;
     padding: 1rem;
 }
-
 .aboutDropdown-text{
     padding: 1rem;
     animation: show ease-in-out 3s 1 forwards;
     color:var(--primary-color);
+}
+
+.aboutDropdown-header svg{
+    height: 24px;
+    width: 24px;
 }
 .arrowdown-icon{
     font-size: 24px;
@@ -50,6 +54,7 @@
 
 .notAnimate{
     cursor: pointer;
+
 }
 
 .animate{
@@ -63,6 +68,10 @@
     }
     .aboutDropdown-header{
         height: 30px;
+    }
+    .aboutDropdown-header svg{
+        height: 13px;
+        width: 13px;
     }
     .aboutDropdown-header h3{
         font-size : 13px;

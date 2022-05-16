@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Banner from '../../component/Banner/index.jsx'
 import Thumbnail from '../../component/Thumbnail/index'
+import Loading from '../../component/Loading/index.jsx'
 import './Home.css'
 /**
  * Home
@@ -11,6 +12,7 @@ function Home() {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(true)
 
+  
   useEffect(() => {
       fetch('http://localhost:8000/apartments')
         .then((res) => {
@@ -26,7 +28,7 @@ function Home() {
         })
   }, [])
 
- /* Senario the server takes long to load data 
+ /*Senario the server takes long to load data 
   useEffect(() => {
     setTimeout(() => {
       fetch('http://localhost:8000/apartments')
@@ -43,11 +45,11 @@ function Home() {
           console.log(err.message)
         })
     }, 2000)
-  }, [])*/
+  }, []) */
 
   return (
     <>
-      {isLoading && <div>Loading ...</div>}
+      {isLoading && <Loading />}
       {data && (
         <div className="Home">
           <div className="home-banner">
