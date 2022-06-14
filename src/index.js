@@ -17,6 +17,7 @@ root.render(
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Kunkanyaremmer_11_28042022" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path ="/Apartment/:id" element={<Apartment />} />
         <Route path="*" element={<Error404 />} />
