@@ -21,22 +21,25 @@ const Apartment = () => {
   console.log(id)
 
   useEffect(() => {
-      fetch('http://localhost:8000/apartments')
-      .then((res) => {
-        return res.json()
-      })
+    //  fetch('http://localhost:8000/apartments') -- fetch using JS-server
+fetch('../../asset/logements.json') // fetch data from local file
+.then((res) => {
+         const response  = res.json()
+         return response
+        })
       .then((data) => {
+        console.log(data)
+        const resultData = data.apartments
+        console.log('checkData', resultData)
         /**  check if {id} found in Json data.*/
-        const apartmentData = data.find((item) => item.id === checkId)
+        const apartmentData = resultData.find((item) => item.id === checkId)
         /** If yes store data in apartmentData */
        apartmentData === undefined ? <Error404 /> : setData(apartmentData)
         setIsLoading(false)
       })
       .catch((err) => {
         console.log(err.message)
-      })
-    
- 
+      }) 
   }, [checkId])
 
   const apartmentData = data
@@ -73,7 +76,6 @@ const Apartment = () => {
                   </div>
 
                   {/** Profil-Avatar section*/}
-
                   <div className="avatar-wrapper">
                   <Avatar host={apartmentData.host}  />
                     <div className="star-container">

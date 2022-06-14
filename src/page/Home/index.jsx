@@ -14,13 +14,15 @@ function Home() {
 
   
   useEffect(() => {
-      fetch('http://localhost:8000/apartments')
+     //fetch('http://localhost:8000/apartments') - using fetch with json-server 
+        fetch('../../asset/logements.json') // fetch json data from local file
         .then((res) => {
           console.log('res',res)
           return res.json()
         })
         .then((data) => {
-          setData(data)
+          console.log(data)
+          setData(data.apartments)
           setLoading(false)
         })
         .catch((err) => {
