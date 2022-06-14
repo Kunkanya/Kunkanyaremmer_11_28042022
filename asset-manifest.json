@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kunkanyaremmer_11_28042022/static/css/main.d48916d0.css",
+    "main.js": "/Kunkanyaremmer_11_28042022/static/js/main.6b65db7d.js",
+    "index.html": "/Kunkanyaremmer_11_28042022/index.html",
+    "main.d48916d0.css.map": "/Kunkanyaremmer_11_28042022/static/css/main.d48916d0.css.map",
+    "main.6b65db7d.js.map": "/Kunkanyaremmer_11_28042022/static/js/main.6b65db7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d48916d0.css",
+    "static/js/main.6b65db7d.js"
+  ]
+}
